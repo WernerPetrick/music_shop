@@ -1,0 +1,60 @@
+ <%= render 'layouts/nav' %> 
+
+<div class="container">
+
+<div class="px-4 py-5 my-5 text-center">
+    <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
+        <div class="hero-text">
+            <h2 class="display-5 fw-bold text-body-emphasis">Harmony Found, Music Unleashed</h2>
+                    <p class="lead mb-4">Welcome to Zen Music, your harmonious haven for all things musical. Immerse yourself in a world of instruments that resonate with your soul. Whether you're a budding musician, a seasoned maestro, or simply a music enthusiast, our extensive collection caters to every musical passion. From the soothing strums of acoustic guitars to the electrifying beats of drum kits, we offer a symphony of choices. Discover your musical Zen at our store today and let your creativity sing.</p>
+        </div>
+            <%= image_tag("hero_image.png", width:"35%") %>
+    </div>
+
+</div>
+
+<div class="services d-flex justify-content-evenly">
+    <div class="card" style="width: 18rem;">
+        <%= image_tag("guitar_category_image.png") %>
+        <div class="card-body">
+            <h5 class="card-title">String Instruments</h5>
+            <p class="card-text">Experience the timeless elegance and versatility of stringed instruments at Zen Music. From the warm, soul-stirring tones of acoustic guitars to the electrifying sounds of electric guitars and the melodic charm of violins, our collection caters to every string enthusiast. Unleash your inner musician with instruments that resonate with your passion.</p>
+            <%= link_to "Shop String Instruments", stringed_path, class:"btn btn-dark" %>
+        </div>
+    </div>
+    <div class="card" style="width: 18rem;">
+        <%= image_tag("drums_category_image.png") %>
+        <div class="card-body">
+            <h5 class="card-title">Percussion Instruments</h5>
+            <p class="card-text">Feel the rhythm and let your creativity flow with our percussion instruments. Whether you're drawn to the primal beats of drums, the intricate patterns of hand percussion, or the shimmering sounds of cymbals, our percussion collection offers a world of possibilities. Explore the heartbeat of music at Zen Music.</p>
+            <%= link_to "Shop Percussion Instruments", percussion_path, class:"btn btn-dark" %>
+        </div>
+    </div>
+    <div class="card" style="width: 18rem;">
+        <%= image_tag("saxophone_category_image.png") %>
+        <div class="card-body">
+            <h5 class="card-title">Wind Instruments</h5>
+            <p class="card-text">Explore the world of wind instruments and let your music take flight. At Zen Music, we offer a wide range of wind instruments, from the enchanting melodies of flutes and saxophones to the bold and brassy sounds of trumpets and trombones. Elevate your musical journey with the perfect wind instrument for your unique style.</p>
+            <%= link_to "Shop Wind Instruments", wind_path, class:"btn btn-dark" %>
+        </div>
+    </div>
+    <div class="card" style="width: 18rem;">
+        <%= image_tag("piano_category_image.png") %>
+        <div class="card-body">
+            <h5 class="card-title">Piano and Keyboards</h5>
+            <p class="card-text">Unlock the full spectrum of musical expression with our exquisite pianos and keyboards. From the rich, resonant tones of grand pianos to the versatility of digital keyboards, we have instruments to inspire pianists of all levels. Elevate your compositions and performances with the perfect keyboard instrument.</p>
+            <%= link_to "Shop Pianos and Keyboards", pianos_path, class:"btn btn-dark" %>
+        </div>
+    </div>
+    <div class="card" style="width: 18rem;">
+        <%= image_tag("music_book_product_image.png") %>
+        <div class="card-body">
+            <h5 class="card-title">Music Books</h5>
+            <p class="card-text">Enhance your musical knowledge and skills with our curated selection of music books. Whether you're a beginner seeking guidance or an experienced musician looking to expand your repertoire, our collection includes sheet music, instructional guides, and music theory books. Dive into the world of musical knowledge and refine your craft.</p>
+            <%= link_to "Shop Music Books", books_path, class:"btn btn-dark" %>
+        </div>
+    </div>
+</div>
+
+
+</div>

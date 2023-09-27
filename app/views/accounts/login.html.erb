@@ -1,0 +1,24 @@
+<%= render 'layouts/nav' %> 
+<div class="container c-body">
+    <div class="position-absolute top-50 start-50 translate-middle">
+        <h1> Welcome back to Zen Music! </h1>
+        <p> 
+            Your musical journey continues here. Log in to your account to access your personalized recommendations, track your orders, and explore our extensive catalog with ease. Your passion for music deserves an experience that's harmonious and hassle-free. Let's make beautiful music together – log in now and pick up where you left off
+        </p>
+
+            <%= form_with url: login_path do |form|%>
+                <div class="mb-3">
+                    <%= form.label :email, class:"form-label"%>
+                    <%= form.text_field :email, class:"form-control"%>
+                </div>
+                <div class="mb-3">
+                    <%= form.label :password, class:"form-label"%>
+                    <%= form.password_field :password, class:"form-control"%>
+                </div>
+                <div class="mb-3">
+                    <%= form.submit "Login", class: "btn btn-info"%>
+                </div>
+            <%end%>
+    </div>
+
+</div>

@@ -1,0 +1,16 @@
+<%= render 'layouts/nav' %> 
+<div class="container c-body">
+
+    <%= render 'layouts/tabs' %> 
+
+    <% if @user%>
+        <div class="container-sm">
+            <div>
+                <p> Logged in as <%= @user.email%> </p>
+                <br/>
+                <%= button_to "Logout", logout_path, method: :delete %>
+            </div>
+        </div>
+    <%end%>
+
+</div>

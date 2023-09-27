@@ -1,0 +1,105 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS (and SCSS, if configured) file within this directory, lib/assets/stylesheets, or any plugin's
+ * vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+
+.hero-text {
+    margin-top: 135px;
+}
+
+body {
+    background: linear-gradient(180deg, rgba(34, 193, 195, 0.5536808473389356) 0%, rgba(255, 206, 102, 0.6433167016806722) 92%);
+}
+
+.c-body {
+    height: 100vh;
+}
+
+.navbar {
+    background-color: #2dc2be !important
+}
+
+.navbar-brand {
+    color: #f0f5f9 !important;
+}
+
+.nav-link {
+    color: #f0f5f9 !important;
+}
+
+.dropdown-item {
+    color: #f0f5f9 !important;
+}
+
+.dropdown-menu {
+    background-color: #2dc2be !important
+}
+
+.dropdown-menu>li :hover {
+    background-color: #454046 !important;
+}
+
+.hero-text>h2 {
+    color: #f0f5f9 !important;
+}
+
+.card {
+    background-color: rgba(159, 179, 204, 42%);
+}
+
+body {
+    background-color: #fbfbfb;
+}
+
+@media (min-width: 991.98px) {
+    main {
+        padding-left: 240px;
+    }
+}
+
+.sidebar {
+    position: fixed;
+    left: 0;
+    box-shadow: 0 7px 5px 0 rgb(0 0 0 / 5%), 0 7px 10px 0 rgb(0 0 0 / 5%);
+    width: 180px;
+    margin-top: 25px;
+    border-right: 2px solid #adb5bd2f;
+    border-top: 2px solid #adb5bd2f;
+}
+
+.sidebar-sticky {
+    position: relative;
+    padding: 25px 0;
+}
+
+.list-group>.nav-link {
+    color: #373634 !important;
+}
+
+.list-group>.nav-link:hover {
+    color: #373634 !important;
+    cursor: pointer;
+    text-decoration: underline;
+    color: #f0f5f9 !important;
+}
+
+.product-layout {
+    padding: 12px;
+    border: 1px solid #e9ecef;
+    border-radius: 8px;
+}
+
+.card-img-top {
+    padding: 8px !important;
+}

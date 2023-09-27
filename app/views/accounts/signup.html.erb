@@ -1,0 +1,33 @@
+<%= render 'layouts/nav' %> 
+<div class="container c-body">
+    <div class="position-absolute top-50 start-50 translate-middle">
+    <h1> Ready to embark on a musical journey like no other? </h1>
+    <p> 
+        Join the Zen Music community today! Sign up to receive exclusive updates, special offers, and musical inspiration straight to your inbox. Whether you're a seasoned musician or just beginning your melodic adventure, our newsletter is your ticket to stay in tune with the latest arrivals, expert tips, and exciting events. Don't miss out – let's create music together!
+    </p>
+        <%= form_with model: @user, url: signup_path do |form| %>
+            <% if @user.errors.any?%>
+                    <div class="alert alert-danger">
+                        <% @user.errors.full_messages.each do |message| %>
+                            <div>
+                                <%= message%>
+                            </div>
+                        <%end%>
+                    </div>
+                <%end%>
+            <div class="mb-3">
+                <%= form.label :email, class:"form-label"%>
+                <%= form.text_field :email, class:"form-control"%>
+            </div>
+            <div class="mb-3">
+                <%= form.label :password, class:"form-label"%>
+                <%= form.password_field :password, class:""%>
+                <%= form.label :password_confirmation, class:"form-label"%>
+                <%= form.password_field :password_confirmation, class:""%>
+            </div>
+            <div class="mb-3">
+                <%= form.submit "Sign Up", class: "btn btn-info"%>
+            </div>
+        <%end%>
+    </div>
+</div>

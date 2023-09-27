@@ -1,0 +1,33 @@
+<%= render 'layouts/nav' %> 
+<div class="container c-body">
+<%= render 'layouts/tabs' %>
+    <% if @user%>
+        <table class="table table-striped">
+            <h4 class="mt-4">Personal Details</h4>
+            <tbody>
+                <tr>
+                    <td>FIRST NAME</td>
+                    <td> ADDING FUNTIONALITY LATER </td>
+                </tr>
+                <tr>
+                    <td>SURNAME NAME</td>
+                    <td> ADDING FUNTIONALITY LATER </td>
+                </tr>
+                <tr>
+                    <td>EMAIL ADDRESS</td>
+                    <td><%=@user.email%></td>
+                </tr>
+                <tr>
+                    <td>CONTACT NUMBER</td>
+                    <td> ADDING FUNTIONALITY LATER </td>
+                </tr>
+            </tbody>
+        </table>
+    <% else %>
+        
+    <% end %>
+        <div class="d-flex justify-content-around">
+            <%= button_to "Edit Personal Details", changepass_path, class:"btn btn-info"%>
+            <%= button_to "Change Password", changepass_path, class:"btn btn-info"%>
+        </div>
+</div>
